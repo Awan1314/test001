@@ -3,14 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.example</groupId>
-	<artifactId>JAVA-study-wang</artifactId>
-	<packaging>pom</packaging>
+	<groupId>com.example</groupId>
+	<artifactId>03-Commonly-used-class</artifactId>
+	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>03-Commonly-used-class</module>
-    </modules>
-    <!-- TODO project name  -->
+	<!-- TODO project name  -->
 	<name>quickstart</name>
 	<description></description>
 
@@ -118,7 +115,10 @@
 			</testResource>
 		</testResources>
 		<plugins>
-
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 
